@@ -1,0 +1,64 @@
+.about {
+    margin-top: 110px;
+    margin-bottom: 180px;
+
+    .about-header { 
+        .about-title {
+            font-size: 60px;
+            font-family: 'Proxima-Nova-ExCn-Thin';
+        }
+
+        hr {
+            color: $site-black;
+            width: 171px;
+            margin-bottom: 37px;
+            margin-top: -16px;
+        }
+
+        p {
+
+        }
+    }
+
+    .about-client-quotes {
+        margin-top: 107px;
+
+        .client-quote-title {
+
+        }
+
+        .client-box {
+            max-width: 722px;
+            background-color: antiquewhite;
+            display: flex;
+            position: relative;
+            margin-top: 37px;
+
+            .client-image {
+                width: 260px;
+                height: 150px;
+                margin-right: 21px;
+                overflow: hidden;
+                //background-color: aqua;
+
+                img {
+                    width: 100%;
+                }
+            }
+    
+            .client-quote {
+                max-width: 440px;
+                margin-bottom: 20px;
+            }
+
+            .client-name {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                color: $site-blue;
+            }
+        }
+        
+    }
+}
+
