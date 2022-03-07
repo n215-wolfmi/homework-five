@@ -76,7 +76,7 @@ nav {
   max-width: 980px;
   width: 75%;
   margin: 0 auto;
-  min-height: 100px;
+  height: 80px;
   border-bottom: 2px solid #000000;
   display: flex;
   align-items: center;
