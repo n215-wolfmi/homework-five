@@ -1,6 +1,9 @@
 .about {
-    width: $site-width;
+    max-width: $site-width;
     margin: $center;
+    //75% of the maximum $site-width, applies to everything in the about section
+    //allows about section to scale as the page is resized
+    width: 75%; 
 
     .about-header { 
         margin-top: 110px;
@@ -36,7 +39,7 @@
             color: $site-black;
             width: 255px;
             margin-bottom: 37px;
-            margin-top: -16px;
+            margin-top: -12px;
         }
 
         .client-box {

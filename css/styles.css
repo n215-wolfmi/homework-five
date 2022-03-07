@@ -32,7 +32,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .home-nav {
   max-width: 980px;
-  width: 100%;
+  width: 75%;
   height: 80px;
   margin: 0 auto;
   border-bottom: 2px solid #FFFFFF;
@@ -68,13 +68,13 @@ h1, h2, h3, h4, h5, h6, p {
     flex-direction: column;
   }
   .home-nav .home-links {
-    margin-top: 15px;
+    margin-top: 13px;
     margin-bottom: 20px;
   }
 }
 nav {
   max-width: 980px;
-  width: 100%;
+  width: 75%;
   margin: 0 auto;
   min-height: 100px;
   border-bottom: 2px solid #000000;
@@ -103,6 +103,17 @@ nav .links span {
   margin: 0 20px;
 }
 
+@media screen and (max-width: 820px) {
+  nav {
+    flex-direction: column;
+    padding-top: 5px;
+  }
+  nav .links {
+    margin-top: 13px;
+    margin-bottom: 15px;
+    line-height: 30px;
+  }
+}
 .banner {
   max-width: 1280px;
   height: 500px;
@@ -333,7 +344,8 @@ nav .links span {
   }
 }
 footer {
-  width: 1280px;
+  max-width: 1280px;
+  width: 100%;
   height: 100px;
   background-color: #79ADDC;
   margin: 0 auto;
@@ -347,6 +359,7 @@ footer .footer-container {
   justify-content: space-between;
   color: #FFFFFF;
   max-width: 980px;
+  width: 75%;
 }
 footer .footer-container .logo {
   width: 92px;
@@ -366,17 +379,25 @@ footer .footer-container .socials {
   font-size: 22px;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 550px) {
   footer {
-    width: 100%;
+    height: 190px;
   }
   footer .footer-container {
+    flex-direction: column;
     width: 75%;
+  }
+  footer .footer-container .copy {
+    margin-top: 20px;
+  }
+  footer .footer-container .socials {
+    margin-top: 20px;
   }
 }
 .about {
-  width: 980px;
+  max-width: 980px;
   margin: 0 auto;
+  width: 75%;
 }
 .about .about-header {
   margin-top: 110px;
@@ -407,7 +428,7 @@ footer .footer-container .socials {
   color: #000000;
   width: 255px;
   margin-bottom: 37px;
-  margin-top: -16px;
+  margin-top: -12px;
 }
 .about .about-client-quotes .client-box {
   max-width: 722px;
